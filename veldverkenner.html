@@ -26,15 +26,40 @@
             <p>Scroll, klik en ontdenk!</p>
         </section>
 
+         <!-- Interactive OpenStreetMap displaying Park Frankendael -->
+        <div id ="map">
 
+            <!-- Buttons that open the zones and explanation popups -->
+          <div class="map-buttons">
 
+            
+            <button class="legenda1" onclick="showPopup('zones-dialog')">
+                <img class="legenda" src="Images/legenda.png" alt="Zones">
+            </button>
 
+           
+            <button class="legenda1" onclick="showPopup('uitleg-dialog')">
+                <img class="legenda" src="Images/legenda2.png" alt="Uitleg">
+            </button>
+          </div>
 
+        </div>
 
-    
+        <!-- Dialog displaying information about the different zones -->
+        <dialog id="zones-dialog">
+            <h2>Zones</h2>
+            <img src="Images/Frame294.svg" alt="Legenda">
+            <button onclick="closePopup('zones-dialog')">Terug</button>
+        </dialog>
 
-    <!--Icon voor de veldverkenner-->
-    
+        <!-- Dialog explaining how to use the field explorer -->
+        <dialog id="uitleg-dialog">
+            <h2>Uitleg</h2>
+            <img src="Images/Frame299.svg" alt="Legenda">
+
+            <button onclick="closePopup('uitleg-dialog')">Terug</button>
+        </dialog>
+
     </main>
 
      <!-- Footer containing the main navigation links -->
