@@ -1,14 +1,84 @@
+/*Homepagina CSS styling*/
+body{
+    font-family: sans-serif;
+}
+header{
+    background-color: #99cc99;
+}
+
+main{
+    background-color: #e5dcbc;
+}
+
+h1{
+    text-align: center;
+    font-size: clamp(2rem, 1.5rem + 2vw, 3.5rem);
+}
+
+.VeldIcoon{
+    display: inline-flex;
+    width: 75px;
+}
+
+.veldbutton{
+    border-radius: 10px;
+    width: 10em;
+    height: 5em;
+    background-color: #8f704f;
+    margin: 15px;
+}
+
+.veld-nieuws{
+    margin: 15px;
+    display: flex;
+    gap: 10px;
+    margin-top: 32px;
+}
+
+.Veld-nieuws{
+    width: 75px;
+    height: 75px;
+}
+.VeldButton {
+    margin: 15px;
+    display: flex;
+    text-align: left;
+    gap: 10px;
+}
+
+.welkom{
+    text-align: center;
+    color: black;
+}
 
 
 /*Veldverkenner CSS styling*/
 
 /* Header veldverkenner*/
+
+body{
+    padding-bottom: 100px;
+    font-family: sans-serif;
+    margin: 0;
+}
+header{
+    background-color: #99cc99;
+}
+
+main{
+    background-color: #e5dcbc;
+}
+
+h1{
+    text-align: center;
+    font-size: clamp(2rem, 1.5rem + 2vw, 3.5rem);
+}
 .Logo{
     width: 180px;
     height: 125px;
 }
 
-.Gast{
+.Gast-icon{
     width: 70px;
     height: 70px;
     float: right;
@@ -35,6 +105,8 @@
     z-index: 1;
 }
 
+
+/* buttons voor de map*/
 .legenda1{
     display: inline-flex;
     width: 50px;
@@ -54,6 +126,17 @@
     padding-left: 15px;
 }
 
+button{
+    width: 65px;
+    height: 33px;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 /* footer gedeelte*/
 .navfooter{
     display: flex;
@@ -65,6 +148,11 @@
     width: 100%;
     z-index: 1000;
     background-color: white;
+}
+
+.NavIcons{
+    width: 80px;
+    border-radius: 25%;
 }
 
 @media(min-width: 768px){

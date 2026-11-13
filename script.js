@@ -1,4 +1,11 @@
 // Java voor de buttons in veldverkenner en map
+function showPopup(id) {
+    document.getElementById(id).showModal();
+}
+
+function closePopup(id) {
+    document.getElementById(id).close();
+}
 
 // maak de map
 const map = L.map('map').setView([52.352007, 4.930380], 19);
@@ -71,12 +78,6 @@ L.marker([52.352061, 4.931110], {
                     <button aria-label="verberg de details">X</button>
                 </div>
             </article>`);
-
-
-
-
-
-
 
 
 // Java voor de collectie kaarten
